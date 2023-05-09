@@ -78,7 +78,7 @@ extension LocationManager:CLLocationManagerDelegate {
         userLongitude = locValue.longitude
         
        
-        
+        //first
         if let location = locations.last {
             userLatitude = location.coordinate.latitude
             userLongitude = location.coordinate.longitude
