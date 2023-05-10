@@ -41,6 +41,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
     }
   
     
+    func applicationWillTerminate(_ application: UIApplication) {
+        locationManager.showsBackgroundLocationIndicator = true
+       locationManager.startMonitoringSignificantLocationChanges()
+    }
+    
    
     
   
